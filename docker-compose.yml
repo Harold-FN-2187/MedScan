@@ -1,0 +1,18 @@
+version: '3.8'
+services:
+  app:
+    build: 
+      dockerfile: Dockerfile
+    volumes:
+      - data:/web
+      - /home/sja/projects/personal/Final_year_project/medscan:/medscan
+    ports:     
+     - "5000:5000"
+    # command: "python3 manage.py initdb"
+
+
+volumes:
+  data:
+
+
+# OpenCV(4.4.0)
